@@ -1,0 +1,154 @@
+:root {
+    --dynamic-height: 100vh;
+}
+
+.preguntasFrecuentesPersonalizada {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    height: var(--dynamic-height);
+}
+
+.preguntasFrecuentesPersonalizada h1 {
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.renderPreguntasPrincipal {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+
+.cardPreguntasFrecuentesPersonalizada {
+    margin-top: 20px;
+    padding: 20px;
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.preguntaPersonalizada, .respuestaPersonalizada {
+    margin: 10px 0;
+}
+
+.preguntaPersonalizada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preguntaTexto {
+    flex: 1;
+    text-align: center;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.resaltadoPersonalizada {
+    font-weight: bold;
+    color: rgb(71, 126, 209);
+    text-transform: uppercase;
+}
+
+.signoInterrogacionPersonalizada {
+    color: rgb(71, 126, 209);
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+/* Ejemplo de estilos únicos para cada pregunta y respuesta */
+.pregunta-0CSS {
+    color: white;
+}
+
+.respuesta-0CSS {
+    color: white;
+}
+
+.pregunta-1CSS {
+    color: white;
+}
+
+.respuesta-1CSS {
+    color: white;
+}
+
+.pregunta-2CSS {
+    color: white;
+}
+
+.respuesta-2CSS {
+    color: white;
+}
+
+.pregunta-3CSS {
+    color: white;
+}
+
+.respuesta-3CSS {
+    color: pink;
+}
+
+/* Estilos adicionales para las listas dentro de las respuestas */
+.respuestaPersonalizada ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.respuestaPersonalizada li {
+    margin-bottom: 10px;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .preguntasFrecuentesPersonalizada{
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .preguntasFrecuentesPersonalizada h1 {
+        font-size: 35px;
+    }
+
+    .renderPreguntasPrincipal {
+        font-size: 18px;
+    }
+
+    .cardPreguntasFrecuentesPersonalizada {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .signoInterrogacionPersonalizada {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .preguntasFrecuentesPersonalizada h1 {
+        font-size: 28px;
+    }
+
+    .renderPreguntasPrincipal {
+        font-size: 16px;
+    }
+
+    .cardPreguntasFrecuentesPersonalizada {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .signoInterrogacionPersonalizada {
+        font-size: 16px;
+    }
+}
