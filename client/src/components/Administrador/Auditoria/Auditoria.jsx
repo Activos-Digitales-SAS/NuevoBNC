@@ -9,7 +9,7 @@ const Auditoria = ({ auditoriaUpdate }) => {
 
   // useEffect para Personas
   useEffect(() => {
-    fetch('https://nuevawebactivosdigitales.onrender.com/api/auditoria-personas')
+    fetch('https://bnc-group.onrender.com/api/auditoria-personas')
       .then(response => response.json())
       .then(data => setPersonasAuditadas(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -17,7 +17,7 @@ const Auditoria = ({ auditoriaUpdate }) => {
 
   // useEffect para Juridicos
   useEffect(() => {
-    fetch('https://nuevawebactivosdigitales.onrender.com/api/auditoria-juridicos')
+    fetch('https://bnc-group.onrender.com/api/auditoria-juridicos')
       .then(response => response.json())
       .then(data => setJuridicosAuditados(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -81,7 +81,7 @@ const Auditoria = ({ auditoriaUpdate }) => {
       if (result.isConfirmed && result.value) {
         const causaRechazo = result.value;
 
-        fetch(`https://nuevawebactivosdigitales.onrender.com/api/rechazar-persona/${id}`, {
+        fetch(`https://bnc-group.onrender.com/api/rechazar-persona/${id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -181,7 +181,7 @@ const Auditoria = ({ auditoriaUpdate }) => {
       if (result.isConfirmed && result.value) {
         const causaRechazo = result.value;
 
-        fetch(`https://nuevawebactivosdigitales.onrender.com/api/rechazar-juridico/${id}`, {
+        fetch(`https://bnc-group.onrender.com/api/rechazar-juridico/${id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -232,7 +232,7 @@ const Auditoria = ({ auditoriaUpdate }) => {
       return persona;
     }));
 
-    fetch(`https://nuevawebactivosdigitales.onrender.com/api/verificar-persona/${id}`, {
+    fetch(`https://bnc-group.onrender.com/api/verificar-persona/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -260,7 +260,7 @@ const Auditoria = ({ auditoriaUpdate }) => {
       return juridico;
     }));
 
-    fetch(`https://nuevawebactivosdigitales.onrender.com/api/verificar-juridico/${id}`, {
+    fetch(`https://bnc-group.onrender.com/api/verificar-juridico/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

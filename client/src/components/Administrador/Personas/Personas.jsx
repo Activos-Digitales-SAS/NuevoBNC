@@ -10,7 +10,7 @@ const Personas = ({ setSelectedUser, searchTerm, onAuditar }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('https://nuevawebactivosdigitales.onrender.com/personas')
+    axios.get('https://bnc-group.onrender.com/personas')
       .then(response => {
         console.log('Datos Personas:', response.data);
         setData(response.data);
@@ -57,7 +57,7 @@ const Personas = ({ setSelectedUser, searchTerm, onAuditar }) => {
       if (result.dismiss === Swal.DismissReason.cancel){
         console.log('Datos a enviar:', persona)
 
-        fetch('https://nuevawebactivosdigitales.onrender.com/api/auditoria-personas', {
+        fetch('https://bnc-group.onrender.com/api/auditoria-personas', {
           method: 'POST',
           headers:{
             'Content-Type': 'application/json'

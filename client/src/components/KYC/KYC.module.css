@@ -10,14 +10,15 @@
 }
 
 .containerKYC h1{
-    color: white;
+    color: black;
     font-weight: 900;
     font-size: 22px;
     text-shadow: #0f1213;
 }
 
 .containerKYC button{
-    background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+  background: gray;
+  color: white;
     padding: 15px;
     border-radius: 10px;
     font-weight: 700;

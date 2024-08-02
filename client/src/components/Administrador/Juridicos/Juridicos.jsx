@@ -10,7 +10,7 @@ const Juridicos = ({ setSelectedJuridico, searchTerm, onAuditar }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('https://nuevawebactivosdigitales.onrender.com/juridicos')
+    axios.get('https://bnc-group.onrender.com/juridicos')
       .then(response => {
         console.log('Datos Juridicos:', response.data)
         setData(response.data);
@@ -60,7 +60,7 @@ const Juridicos = ({ setSelectedJuridico, searchTerm, onAuditar }) => {
       if(result.dismiss === Swal.DismissReason.cancel){
        console.log('Datos a Enviar --Juridicos:', juridico)
 
-       fetch('https://nuevawebactivosdigitales.onrender.com/api/auditoria-juridicos', {
+       fetch('https://bnc-group.onrender.com/api/auditoria-juridicos', {
         method: 'POST',
         headers:{
           'Content-Type' :  'application/json'

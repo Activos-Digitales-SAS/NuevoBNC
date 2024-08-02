@@ -12,7 +12,7 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://nuevawebactivosdigitales.onrender.com/login', { 
+      const response = await fetch('https://bnc-group.onrender.com/login', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

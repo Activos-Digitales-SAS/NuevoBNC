@@ -13,14 +13,14 @@ const Billing = () => {
       imageWidth: window.innerWidth > 768 ? 400 : 200,
       imageAlt: 'Compromiso SAGRILAFT',
       html: `
-      <p>En la <strong>Organización ACTIVOS DIGITALES S.A.S.</strong>, estamos comprometidos con la puesta en marcha de acciones que permitan tener operaciones comerciales de venta, compra, intermediación y/o custodia de Activos Virtuales, disminuyendo los riesgos frente al Lavado de Activos y/o Financiación del Terrorismo LA/FT.</p>
+      <p>En la <strong>Organización BNC GROUP</strong>, estamos comprometidos con la puesta en marcha de acciones que permitan tener operaciones comerciales de venta, compra, intermediación y/o custodia de Activos Virtuales, disminuyendo los riesgos frente al Lavado de Activos y/o Financiación del Terrorismo LA/FT.</p>
       <p>Esta necesidad responde a que, en la actualidad, en nuestro país es necesario establecer algunos procedimientos, controles y reportes en las Personas naturales y/o Jurídicas que realicen actividades comerciales con Activos Virtuales (AV), para la prevención de actividades delictivas.</p>
       <p>Ante la amenaza que sobre ellos alza la delincuencia internacional en cualquiera de sus expresiones: terrorismo, lavado de activos, corrupción administrativa, etc., que obliga a que cada vez más numerosos los entes obligados a adoptar medidas de prevención, detección y control del lavado de activos.</p>
       <p>El uso de activos virtuales (AV) en la economía representa un desafío para la prevención y el combate al lavado de activos (LA) y el financiamiento del terrorismo (FT). Colombia no cuenta con una legislación que regule explícitamente los AV. Sin embargo, existen normas generales, como la Ley de Financiamiento (Ley 1943 de 2018), que otorgan beneficios fiscales a las empresas que participan en el desarrollo de valor agregado tecnológico.</p>
       <p>Por su parte, la Unidad de Información y Análisis Financiero (UIAF) emitió la Resolución 314 de 2021, del 15 de diciembre de 2021. Con esta Resolución, la UIAF implementó la obligación de reporte a los proveedores de servicios de activos virtuales. La resolución 314 se aplica a las personas naturales o jurídicas que realicen por cuenta propia o por cuenta de otra persona natural o jurídica actividades u operaciones, cualquiera que sea su cuantía, relacionadas con: 
       <ul>
         <li><strong>a)</strong> Intercambio entre AV y monedas fiduciarias e intercambio de monedas fiduciarias a activos virtuales;</li>
-        <li><strong>b)</strong> Intercambio entre una o más formas de AV</li>
+        <li><strong>b)</strong> Intercambio entre una o más formas de AV;</li>
         <li><strong>c)</strong> Transferencias de AV;</li>
         <li><strong>d)</strong> Custodia o administración de AV o instrumentos que permitan el control de AV;</li>
         <li><strong>e)</strong> Participación y provisión de servicios financieros relacionados con la oferta o venta de un AV; por parte de un emisor;</li>
@@ -39,7 +39,6 @@ const Billing = () => {
     <section 
       id="product" 
       className={`${layout.sectionReverse} bg-white rounded-lg p-8 mt-20`}
-    
     >
       <motion.div 
         className="flex-1"
